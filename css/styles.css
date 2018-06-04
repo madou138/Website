@@ -1,7 +1,40 @@
+* { 
+    box-sizing: border-box;
+  }
+
 .profile-image {
    size: 0px;
    max-width: 100%;
    height: auto;
    background-size: contain;
 
+}
+header {
+    text-align: center;
+    background: url("WaterfrontPkDwnt.jpg") no-repeat top center;
+    background-size: cover;
+    overflow: hidden;
+    padding-top: 60px;
+  }
+
+#email {
+    text-decoration-color: aquamarine;
+    background-size: 10 px;
+}
+
+#name {
+
+    text-emphasis: wm;
+    color: blueviolet;
+}
+
+.name{
+    background-color: green;
+}
+
+.email{
+    background-color: green;
+}
+.comment{
+    background-color: green;
 }
