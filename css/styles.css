@@ -2,24 +2,72 @@
     box-sizing: border-box;
   }
 
-.profile-image {
-   size: 0px;
+body {
+    margin: 0 0;
+    padding: 0 0;
+    background-color: beige;
+}
+
+form {
+    text-align: center;
+}
+
+header {
+
+    background-color: gray;
+}
+
+.header-image {
+   size: 100%;
    max-width: 100%;
    height: auto;
    background-size: contain;
+}
+
+.main_nav {
+    background-color: orange;
+}
+
+.nav {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    overflow: hidden;
 
 }
-header {
+
+/**
+* removes the horizontal and vertical white space around the page.
+*/
+
+li a { 
+    float: left;
+    display: block;
+    color: white;
     text-align: center;
-    background: url("WaterfrontPkDwnt.jpg") no-repeat top center;
-    background-size: cover;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.main_header {
+    text-align: center;
     overflow: hidden;
     padding-top: 60px;
   }
 
+
 #email {
     text-decoration-color: aquamarine;
     background-size: 10 px;
+}
+
+.container {
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 #name {
@@ -37,4 +85,41 @@ header {
 }
 .comment{
     background-color: green;
+}
+
+/**
+* Media Queries
+*/
+
+@media (min-width: 769px) {
+    .container {
+        width: 70%;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .parag {
+        display: inline-block;
+        width: 50%;
+        margin-right: -4px;
+        vertical-align: top;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+     /** list item displays flex box*/
+     #flex {
+        display: flex;
+        list-style-type: none;
+        max-width: 1200px;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+
+    .main_nav {
+        position: fixed;
+        width: 100%;
+        top: 0;
+    }
+
 }
